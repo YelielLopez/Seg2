@@ -65,7 +65,9 @@ public class BookLoan {
     }
 
     public void consulLoanInfo(){
-        JOptionPane.showMessageDialog(null, "Loan information: " + "\nBook status: " + getLoanStatus() +"\nLoan code: " + getLoanCode() + "\nLoan date: "+ getLoanDate() + "\nBook name: " + getBookName() + "\nUser code: " + getUserCode() + "\nLoan days: " +getLoanDays());
+        JOptionPane.showMessageDialog(null, "Loan information: " + "\nBook status: " +
+                getLoanStatus() +"\nLoan code: " + getLoanCode() + "\nLoan date: "+ getLoanDate() + "\nBook name: " +
+                getBookName() + "\nUser code: " + getUserCode() + "\nLoan days: " +getLoanDays());
     }
 }
 
