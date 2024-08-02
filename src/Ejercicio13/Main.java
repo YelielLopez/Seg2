@@ -2,11 +2,21 @@ package Ejercicio13;
 import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
-        int firstNumber = Integer.parseInt(JOptionPane.showInputDialog("Enter the first number"));
-        int secondNumber = Integer.parseInt(JOptionPane.showInputDialog("Enter the second number"));
-        int thirdNumber = Integer.parseInt(JOptionPane.showInputDialog("Enter the third number"));
-        Mayor mayorInstance = new Mayor();
-        mayorInstance.setMayor(Math.max(firstNumber, Math.max(secondNumber, thirdNumber)));
-        mayorInstance.displayLargestNumber();
+
+        String input1 = JOptionPane.showInputDialog("Enter the first number:");
+        String input2 = JOptionPane.showInputDialog("Enter the second number:");
+        String input3 = JOptionPane.showInputDialog("Enter the third number:");
+
+
+        int num1 = Integer.parseInt(input1);
+        int num2 = Integer.parseInt(input2);
+        int num3 = Integer.parseInt(input3);
+
+
+        GreatestNumber greatestNumber = new GreatestNumber(num1, num2, num3);
+
+
+        int greatest = greatestNumber.findGreatest();
+        JOptionPane.showMessageDialog(null, "The greatest number is: " + greatest);
     }
 }

@@ -5,6 +5,15 @@ public class SalaryCalculator {
     private String name;
     private double hourlyRate;
 
+    public SalaryCalculator(int hoursWorked, String name, double hourlyRate) {
+        this.hoursWorked = hoursWorked;
+        this.name = name;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public SalaryCalculator() {
+    }
+
     public int getHoursWorked() {
         return hoursWorked;
     }

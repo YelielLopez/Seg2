@@ -5,9 +5,20 @@ public class WashingMachinesEnterprise {
     private int smallWasherCost;
     private double discount = 0.03;
 
+
+    public WashingMachinesEnterprise(int largeWasherCost, int smallWasherCost) {
+        this.largeWasherCost = largeWasherCost;
+        this.smallWasherCost = smallWasherCost;
+
+    }
+
+    public WashingMachinesEnterprise() {
+    }
+
     public int getLargeWasherCost() {
         return largeWasherCost;
     }
+    
 
     public void setLargeWasherCost(int largeWasherCost) {
         this.largeWasherCost = largeWasherCost;

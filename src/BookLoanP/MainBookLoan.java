@@ -6,6 +6,8 @@ public class MainBookLoan {
     public static void main(String[] args) {
         BookLoan loan1 = new BookLoan();
 
+        BookLoan loan2 = new BookLoan((int)(Math.random() *100), "22/07/2025", "El señor de los aniillos",(int)(Math.random() *10), 14,"Good" );
+
         JOptionPane.showMessageDialog(null, "Welcome to the library loan system");
         int question = JOptionPane.showConfirmDialog(null, "Do you want to borrow a book?");
 
@@ -48,5 +50,6 @@ public class MainBookLoan {
 
         }
 
+        System.out.println("La otra información ingresada "+ loan2);
     }
 }

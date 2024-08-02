@@ -11,6 +11,18 @@ public class BookLoan {
     public int loanDays;
     public String loanStatus;
 
+    public BookLoan(int loanCode, String loanDate, String bookName, int userCode, int loanDays, String loanStatus) {
+        this.loanCode = loanCode;
+        this.loanDate = loanDate;
+        this.bookName = bookName;
+        this.userCode = userCode;
+        this.loanDays = loanDays;
+        this.loanStatus = loanStatus;
+    }
+
+    public BookLoan() {
+    }
+
     public int getLoanCode() {
         return loanCode;
     }

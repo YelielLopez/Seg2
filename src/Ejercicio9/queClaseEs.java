@@ -4,6 +4,14 @@ public class queClaseEs {
     private int positive;
     private int negative;
 
+    public queClaseEs(int positive, int negative) {
+        this.positive = positive;
+        this.negative = negative;
+    }
+
+    public queClaseEs() {
+    }
+
     public int getPositive() {
         return positive;
     }

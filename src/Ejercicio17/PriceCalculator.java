@@ -3,7 +3,14 @@ package Ejercicio17;
 public class PriceCalculator {
    private int quantity;
 
-   public int getQuantity() {
+    public PriceCalculator(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public PriceCalculator() {
+    }
+
+    public int getQuantity() {
        return quantity;
    }
 

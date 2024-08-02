@@ -9,6 +9,19 @@ import javax.swing.*;
         private String subject;
         private String complaintStatus;
 
+
+
+        public Complaint(int complaintNumber, String complaintDescription, String personName, String subject, String complaintStatus) {
+            this.complaintNumber = complaintNumber;
+            this.complaintDescription = complaintDescription;
+            this.personName = personName;
+            this.subject = subject;
+            this.complaintStatus = complaintStatus;
+        }
+
+        public Complaint() {
+        }
+
         public String getPersonName() {
             return personName;
         }

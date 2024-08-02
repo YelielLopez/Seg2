@@ -3,6 +3,13 @@ import javax.swing.*;
 public class Triangulo {
     private int sumOfAngles;
 
+    public Triangulo(int sumOfAngles) {
+        this.sumOfAngles = sumOfAngles;
+    }
+
+    public Triangulo() {
+    }
+
     public int getSumOfAngles() {
         return sumOfAngles;
     }

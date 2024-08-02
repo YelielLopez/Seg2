@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         WashingMachinesEnterprise washingMachine = new WashingMachinesEnterprise();
+        WashingMachinesEnterprise wash = new WashingMachinesEnterprise(12, 6);
         washingMachine.setLargeWasherCost(4000);
         washingMachine.setSmallWasherCost(3000);
 
@@ -13,5 +14,6 @@ public class Main {
 
         boolean isLarge = (selection == 1);
         washingMachine.printCostDetails(quantity, isLarge);
+        System.out.println(wash);
     }
 }

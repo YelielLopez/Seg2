@@ -3,6 +3,13 @@ import javax.swing.*;
 public class NumberChecker {
     private int number;
 
+    public NumberChecker(int number) {
+        this.number = number;
+    }
+
+    public NumberChecker() {
+    }
+
     public int getNumber() {
         return number;
     }
@@ -13,10 +20,6 @@ public class NumberChecker {
 
     public boolean isEven() {
         return number % 2 == 0;
-    }
-
-    public boolean isOdd() {
-        return !isEven();
     }
 
     public void displayNumberType() {
